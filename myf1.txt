@@ -1,1 +1,228 @@
+
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ git remote remove origin
+error: No such remote: 'origin'
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ git remote add origin https://github.com/ranesiddhesh1511/ToolPathGenerator.git
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/ranesiddhesh1511/ToolPathGenerator.git'
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ git clone https://github.com/KRojalin/Github-f1
+Cloning into 'Github-f1'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ pwd
+/c/Users/nirli
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ cd projects
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects (master)
+$ ls
+Github-f1/  fresh-project/  github-demo/
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects (master)
+$ cd Github-f1
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ ls
+++.txt  README.md  f1.txt  myf1.txt  start.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git push origin
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (9/9), 738 bytes | 123.00 KiB/s, done.
+Total 9 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/KRojalin/Github-f1
+   9daa2ae..913a029  main -> main
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git push -u origin
+Everything up-to-date
+branch 'main' set up to track 'origin/main'.
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ cat .ssh/id_rsa.pub
+cat: .ssh/id_rsa.pub: No such file or directory
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ ssh-keygen -t rsa -b 4096 -C "krojalin@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/nirli/.ssh/id_rsa):
+Created directory '/c/Users/nirli/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/nirli/.ssh/id_rsa
+Your public key has been saved in /c/Users/nirli/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:VX2IAUupdfpFHnPyXxuVBVQ5tA4iSCaDrsH74q8raQU krojalin@gmail.com
+The key's randomart image is:
++---[RSA 4096]----+
+|    .o o  ooo=+=*|
+|   .  = ..ooo B+=|
+|. .    . +o+ + Oo|
+| E .    ..o . =.o|
+|  =     S  . . .=|
+| o .        .  ..|
+| .o              |
+|oo .             |
+|++=.             |
++----[SHA256]-----+
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ cat .ssh/id_rsa.pub
+cat: .ssh/id_rsa.pub: No such file or directory
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ ls -ltr
+total 4
+-rw-r--r-- 1 Rojalin 197121 11 Aug  7 18:32 README.md
+-rw-r--r-- 1 Rojalin 197121 19 Aug  7 18:38 start.txt
+-rw-r--r-- 1 Rojalin 197121  0 Aug  7 22:48 ++.txt
+-rw-r--r-- 1 Rojalin 197121 14 Aug  8 09:56 myf1.txt
+-rw-r--r-- 1 Rojalin 197121 15 Aug  8 10:17 f1.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ cd /c/Users/nirli/
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ cat .ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCoRULjB/3xPPsQzrh8RpdSozx3+EW7WklNRmx8zUO+3WeV16+oOKlUzOybGTwPm/BCQeFjXEJ6C3atVlh7MBNHzuYEIHwXMcIsVD3O8gu+KYOMtxkDOYIvOKcjPRJJKxdlqNP0D73B5O7F/2PhcZagCAuplzgTBAQkx/7e4Q6NuzVZxGqtQEtHo8OKhsHXdcvF5WdMJRLwYu8jWFkn3v615PyMexCboBsQd5B1q5UrjvAnjkwv0SGJz+/DVXWOXmV8dYqK0iUy1Mkf/f+nFST6h94X5DX+1ZXbn8OvZJmN4OtLBOgm2K6nyVEHaoNxBfRz9bBVEtSh9rIJ3phXKmFWBEn4/S/3IBsZjjd3M1w9UKMMy8DorVKnqhm2gd6A8l7SZazgRJAsZ0DxBPrJeaPdE4OsHgF8ouT/scQNe8LpG/muyuRJsVGhWB5GvEIT02YT2cAzHbx/vY/u6WL3VG6JJs2YqNIoVN+2YUKSrwLayQEQxDbmvvQACAKIRZl0fKJCxwfXlZEKoKjian/9Yqvh3bMJ/mn3etIS6MDmd7/oBlBajLFDGnzM5W2zqVe+hUoUi2RGxaig0vQRLrCwZkRlXJKlwdQLc3j5/+8jC/CkERGQNQmLrhu7NS9ipP7LLCp3ojGydj1BZhY7jct3gq/zFZk3zNoe92lkATAhu+zaGw== krojalin@gmail.com
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~ (master)
+$ cd projects
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects (master)
+$ cd Github-f1
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ ls -ltr
+total 4
+-rw-r--r-- 1 Rojalin 197121 11 Aug  7 18:32 README.md
+-rw-r--r-- 1 Rojalin 197121 19 Aug  7 18:38 start.txt
+-rw-r--r-- 1 Rojalin 197121  0 Aug  7 22:48 ++.txt
+-rw-r--r-- 1 Rojalin 197121 14 Aug  8 09:56 myf1.txt
+-rw-r--r-- 1 Rojalin 197121 15 Aug  8 10:17 f1.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ vi f1.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ vi f1.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   f1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git add f1.txt
+warning: in the working copy of 'f1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   f1.txt
+
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git commit
+Aborting commit due to empty commit message.
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   f1.txt
+
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git commit -m " update line"
+[main b004532]  update line
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ ls -ltr
+total 4
+-rw-r--r-- 1 Rojalin 197121 11 Aug  7 18:32 README.md
+-rw-r--r-- 1 Rojalin 197121 19 Aug  7 18:38 start.txt
+-rw-r--r-- 1 Rojalin 197121  0 Aug  7 22:48 ++.txt
+-rw-r--r-- 1 Rojalin 197121 14 Aug  8 09:56 myf1.txt
+-rw-r--r-- 1 Rojalin 197121 35 Aug  8 12:57 f1.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ vi f1.txt
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git add f1.txt
+warning: in the working copy of 'f1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   f1.txt
+
+
+Rojalin@LAPTOP-VLCV8LH0 MINGW64 ~/projects/Github-f1 (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 276 bytes | 276.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/KRojalin/Github-f1
+   913a029..b004532  main -> main
+
 My first file
